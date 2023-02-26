@@ -95,6 +95,8 @@ As we can see, there is no definitive category that has a higher average duratio
 
 ## NMAR Analysis
 
+A potential NMAR column in the dataset is `CUSTOMERS.AFFECTED`, which has a total of `443` missing values. This column only contains approximations of the amount of customers affected as there is no real way to find the exact number. For this reason, the process by which these numbers are approximated may affect the missingness of this column. For example, if there was not enough data on the outage region to produce a reliable estimate on the customers, this could result in the value being missing. In order to determine the missingness, more information must be collected on the data generating process.
+
 ## Missingness Dependency
 
 We will compare the missingness of the `CUSTOMERS.AFFECTED` column against `RES.PRICE` and `OUTAGE.DURATION`
